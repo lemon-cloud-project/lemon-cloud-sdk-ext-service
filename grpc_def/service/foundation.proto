@@ -1,0 +1,11 @@
+syntax = "proto3";
+
+package service;
+
+option go_package = "github.com/lemon-cloud-project/lemon-cloud-sdk-ext-service/sdk_ext_service;sdk_ext_service";
+
+import "grpc_def/model/foundation.proto";
+
+service FoundationService {
+  rpc Register (model.ExtInfo) returns (stream model.ExtInfo);
+}

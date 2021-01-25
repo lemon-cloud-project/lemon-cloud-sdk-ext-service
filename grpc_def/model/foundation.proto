@@ -1,0 +1,10 @@
+syntax = "proto3";
+
+package model;
+
+option go_package = "github.com/lemon-cloud-project/lemon-cloud-sdk-ext-service/sdk_ext_model;sdk_ext_model";
+
+message ExtInfo {
+  string name = 1;
+  string author = 2;
+}
